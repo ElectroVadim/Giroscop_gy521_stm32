@@ -4,22 +4,22 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
-C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c 
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
+C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c 
 
 OBJS += \
 ./Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o \
@@ -59,7 +59,7 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -67,7 +67,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o: C:/Users/Vadim/Documents/GY-521/Dr
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -75,7 +75,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o: C:/Users/Vadim/Documents/GY
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -83,7 +83,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o: C:/Users/Vadim/Documents/GY-52
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -91,7 +91,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o: C:/Users/Vadim/Documents/GY
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -99,7 +99,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o: C:/Users/Vadim/Documents/GY-
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -107,7 +107,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o: C:/Users/Vadim/Documents/
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -115,7 +115,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o: C:/Users/Vadim/Docum
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -123,7 +123,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o: C:/Users/Vadim/Documents/GY-5
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -131,7 +131,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o: C:/Users/Vadim/Documents/GY-52
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c_ex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c_ex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -139,7 +139,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c_ex.o: C:/Users/Vadim/Documents/GY
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -147,7 +147,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o: C:/Users/Vadim/Documents/GY-52
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -155,7 +155,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o: C:/Users/Vadim/Documents/GY
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -163,7 +163,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o: C:/Users/Vadim/Documents/GY-52
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -171,7 +171,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o: C:/Users/Vadim/Documents/GY
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
@@ -179,7 +179,7 @@ Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o: C:/Users/Vadim/Documents/GY-52
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim_ex.o: C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim_ex.o: C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%

@@ -1,4 +1,5 @@
-Application/User/gpio.o: C:/Users/Vadim/Documents/GY-521/Src/gpio.c \
+Application/User/gpio.o: \
+ C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Src/gpio.c \
  ../../../Inc/gpio.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../../../Inc/stm32f4xx_hal_conf.h ../../../Inc/mxconstants.h \

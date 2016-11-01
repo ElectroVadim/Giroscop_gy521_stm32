@@ -1,5 +1,5 @@
 Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o: \
- C:/Users/Vadim/Documents/GY-521/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
+ C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../../../Inc/stm32f4xx_hal_conf.h ../../../Inc/mxconstants.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
