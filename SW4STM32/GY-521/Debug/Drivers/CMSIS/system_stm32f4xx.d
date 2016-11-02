@@ -9,7 +9,7 @@ Drivers/CMSIS/system_stm32f4xx.o: \
  ../../../Drivers/CMSIS/Include/core_cmSimd.h \
  ../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
- ../../../Inc/stm32f4xx_hal_conf.h ../../../Inc/mxconstants.h \
+ ../../../Inc/stm32f4xx_hal_conf.h ../../../Inc/main.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
@@ -25,7 +25,8 @@ Drivers/CMSIS/system_stm32f4xx.o: \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
- ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 
 ../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 
@@ -47,7 +48,7 @@ Drivers/CMSIS/system_stm32f4xx.o: \
 
 ../../../Inc/stm32f4xx_hal_conf.h:
 
-../../../Inc/mxconstants.h:
+../../../Inc/main.h:
 
 ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
 
@@ -80,3 +81,5 @@ Drivers/CMSIS/system_stm32f4xx.o: \
 ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 
 ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+
+../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:

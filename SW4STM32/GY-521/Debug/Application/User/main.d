@@ -1,7 +1,8 @@
 Application/User/main.o: \
  C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Src/main.c \
+ ../../../Inc/main.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
- ../../../Inc/stm32f4xx_hal_conf.h ../../../Inc/mxconstants.h \
+ ../../../Inc/stm32f4xx_hal_conf.h ../../../Inc/main.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  ../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -26,14 +27,17 @@ Application/User/main.o: \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
- ../../../Inc/i2c.h ../../../Inc/gpio.h \
+ ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ ../../../Inc/i2c.h ../../../Inc/usart.h ../../../Inc/gpio.h \
  C:/Users/ostapchuk_v/git/Giroscop_gy521_stm32/Src/EV_MPU6050_hal.h
+
+../../../Inc/main.h:
 
 ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 
 ../../../Inc/stm32f4xx_hal_conf.h:
 
-../../../Inc/mxconstants.h:
+../../../Inc/main.h:
 
 ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
 
@@ -83,7 +87,11 @@ Application/User/main.o: \
 
 ../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 
+../../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+
 ../../../Inc/i2c.h:
+
+../../../Inc/usart.h:
 
 ../../../Inc/gpio.h:
 

@@ -14,6 +14,7 @@
 "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o"
 "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim.o"
 "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_tim_ex.o"
+"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_uart.o"
 "Drivers/CMSIS/system_stm32f4xx.o"
 "Application/User/EV_MPU6050_hal.o"
 "Application/User/gpio.o"
@@ -21,4 +22,5 @@
 "Application/User/main.o"
 "Application/User/stm32f4xx_hal_msp.o"
 "Application/User/stm32f4xx_it.o"
+"Application/User/usart.o"
 "Application/SW4STM32/startup_stm32f407xx.o"

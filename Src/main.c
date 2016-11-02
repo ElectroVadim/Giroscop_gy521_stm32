@@ -31,9 +31,12 @@
   ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
+#include "main.h"
 #include "stm32f4xx_hal.h"
 #include "i2c.h"
+#include "usart.h"
 #include "gpio.h"
+#include <stdio.h>
 
 /* USER CODE BEGIN Includes */
 #include "EV_MPU6050_hal.h"
@@ -68,6 +71,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 	MPU6050_Result result ;
+//	uint16_t str[] = "Usart transmit ";
 //	uint8_t mpu_ok[15] = {"MPU WORK FINE\n"};
 //	uint8_t mpu_not[17] = {"MPU NOT WORKING\n"};
   /* USER CODE END 1 */
@@ -83,19 +87,22 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
+  MX_USART2_UART_Init();
 
   /* USER CODE BEGIN 2 */
-
+  int i=0;
+  char buf[40] ={0};
+  result = MPU6050_Init(&hi2c1,&mpu1,MPU6050_Device_0,MPU6050_Accelerometer_2G,MPU6050_Gyroscope_250s );
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	result = MPU6050_Init(&hi2c1,&mpu1,MPU6050_Device_0,MPU6050_Accelerometer_2G,MPU6050_Gyroscope_250s );
-	HAL_Delay(500);
 
 	HAL_Delay(500);
+
+	//HAL_Delay(500);
 	MPU6050_ReadTemperature(&hi2c1,&mpu1);
 	float temper = mpu1.Temperature;
 	MPU6050_ReadGyroscope(&hi2c1,&mpu1);
@@ -107,6 +114,29 @@ int main(void)
 	int16_t a_x = mpu1.Accelerometer_X;
 	int16_t a_y = mpu1.Accelerometer_Y;
 	int16_t a_z = mpu1.Accelerometer_Z;
+
+
+	memset (buf, 0, (sizeof(buf)/sizeof(char)));
+
+	sprintf((char*)buf, " g_x=%d g_y=%d g_z=%d \n\r", g_x, g_y, g_z);
+
+
+	i = (sizeof(buf)/sizeof(char)) ;
+	HAL_UART_Transmit(&huart2, buf,--i , 0xFFFF);
+
+	memset (buf, 0, (sizeof(buf)/sizeof(char)));
+
+	sprintf((char*)buf, " a_x=%d a_y=%d a_z=%d \n\r", a_x, a_y, a_z);
+	i = (sizeof(buf)/sizeof(char)) ;
+	HAL_UART_Transmit(&huart2, buf,--i , 0xFFFF);
+
+
+	//sprintf((char*)buf, "temper= %f \n\r", temper);
+
+	//i = (sizeof(buf)/sizeof(char)) ;
+
+	//HAL_UART_Transmit(&huart2, buf,--i , 1000);
+	//HAL_UART_Transmit(&huart2, temper,1, 0xFFFF);
 
 
   /* USER CODE END WHILE */
@@ -126,10 +156,14 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
 
+    /**Configure the main internal regulator output voltage 
+    */
   __HAL_RCC_PWR_CLK_ENABLE();
 
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
+    /**Initializes the CPU, AHB and APB busses clocks 
+    */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = 16;
@@ -144,19 +178,26 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 
+    /**Initializes the CPU, AHB and APB busses clocks 
+    */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
 
+    /**Configure the Systick interrupt time 
+    */
   HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
 
+    /**Configure the Systick 
+    */
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 
   /* SysTick_IRQn interrupt configuration */
